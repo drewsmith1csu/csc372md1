@@ -1,0 +1,22 @@
+// Manager.java
+public class Manager extends Employee {
+    private double bonus; // Bonus for the manager
+
+    // Constructor
+    public Manager(int employeeId, String employeeName, double employeeSalary, double bonus) {
+        super(employeeId, employeeName, employeeSalary); // Call to the parent class constructor
+        this.bonus = bonus;
+    }
+
+    // Getter for bonus
+    public double getBonus() {
+        return bonus;
+    }
+
+    // Override the display method to include bonus
+    @Override
+    public void display() {
+        super.display(); // Call display method from Employee class
+        System.out.println("Manager Bonus: " + bonus);
+    }
+}
