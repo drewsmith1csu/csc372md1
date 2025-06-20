@@ -1,0 +1,12 @@
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        // Create Employee instance
+        Employee emp = new Employee(1, "Alice", 50000);
+        emp.display();
+
+        // Create Manager instance
+        Manager mgr = new Manager(2, "Bob", 70000, 5000);
+        mgr.display();
+    }
+}
