@@ -9,7 +9,7 @@ private String firstName;
 private String lastName;
 private int employeeID;
 private double salary;
-public Employee()                          //default constructor
+public Employee()                          
 {
   firstName=null;
   lastName=null;
@@ -17,7 +17,7 @@ public Employee()                          //default constructor
   salary=0.0;
   
 }
-public void setFirstName(String fname)       //set and get methods for all attributes
+public void setFirstName(String fname)       
 {
   firstName = fname;
 }
@@ -50,7 +50,7 @@ public double getSalary()
 {
   return salary;
 }
-public void EmployeeSummary()       //display all attributes of Employee class
+public void EmployeeSummary()       
 {
   System.out.println("Employee Name: "+ firstName +" " +lastName+" Employee Id : "+employeeID + " salary: "+salary);
 }
@@ -58,12 +58,12 @@ public void EmployeeSummary()       //display all attributes of Employee class
 class Manager extends Employee          
 {
 private String department;
-public Manager()                       //default constructor
+public Manager()                       
 {
-  super();                           //calling superor base class default constructor
+  super();                           
   department = null;
 }
-public void setDepartment(String dept)        //set and get methods for department
+public void setDepartment(String dept)        
 {
   department=dept;
 }
@@ -73,7 +73,7 @@ public String getDepartment()
 }
 public void EmployeeSummary()
 {
-  super.EmployeeSummary();     //calling super class method with same name
+  super.EmployeeSummary();     
   System.out.println("Department : "+department);
 }
 }
@@ -83,7 +83,7 @@ class TestEmployee
 public static void main (String[] args)
 {
   Manager mgr=new Manager();
-  mgr.setFirstName("Charles");        //all set methods of super class are available to derived class
+  mgr.setFirstName("Charles");        
   mgr.setLastName("Dickens");
   mgr.setEmployeeID(34599);
   mgr.setSalary(6500);
